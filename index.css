@@ -1,53 +1,104 @@
-body{background-color: aqua;}
+body {
+  margin: 0;
+  background-color: rgb(220, 247, 253);
+}
 
 
 /* Define grid-areas for grid-template-areas here */
-header { grid-area: header; background-color: DarkTurquoise; }
-nav { grid-area: menu; background-color: LightBlue; }
-main { grid-area: main; background-color: rgb(255, 255, 255); }
-aside { grid-area: aside; background-color: white; }
-footer { grid-area: footer; background-color: white; }
+header {
+  grid-area: header;
+  background-color:white;
+  padding: 40px;
+  font-size: 30px;
+ 
+}
+
+nav {
+  grid-area: menu;
+  background-color:rgb(17, 23, 26);
+  display: flex;
+  padding: 80px;
+  color: white;
+}
+
+.menu-bar2{
+  text-align: right;
+}
+
+main {
+  grid-area: main;
+  background-color:lightcyan;
+}
+
+.main-header{
+  font-size: 40px;
+  color:black;
+  background-color:rgb(98, 167, 231);
+  padding: 50px;
+  text-align: center;
+top: 50px;
+}
+
+.p-main{
+  font-size: 80px;
+  text-align: center;
+  padding: 10px;
+  border: gold;
+}
+
+aside {
+  grid-area: aside;
+  background-color: white;
+}
+
+.flex-container{
+  
+  
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: white;
+}
 
 
 
-img { 
-  max-width: 90%; 
+img {
+  max-width: 90%;
 }
 
 /* Mobile first */
 .grid-container {
-  display: grid;
   grid-template-areas:
     'header header menu'
     'main   main   main'
     'aside  aside  aside'
     'footer footer footer';
   grid-gap: 10px;
-  background-color: SlateGrey;
-  padding: 10px;
+  background-color:unset;
+  padding: 100px;
   min-width: 320px;
 }
 
-.grid-container > * {
-  text-align: center;
+.grid-container>* {
   padding: 10px;
-  font-family: monospace;
-  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .flex-container {
   display: flex;
 }
-.flex-container > div {
-  width: 100%;
-  border: 1px solid green;
+
+
 }
 
 /* Tablet size */
 @media screen and (min-width: 768px) {
   .grid-container {
     grid-template-areas:
-      'header header' 
+      'header header'
       'menu   menu'
       'main   main'
       'aside  aside'
@@ -59,20 +110,75 @@ img {
 @media screen and (min-width: 992px) {
   .grid-container {
     grid-template-areas:
-      'header header header header header header' 
+      'header header header header header header'
       'menu   menu   menu   menu   menu   menu'
       'main   main   main   main   aside  aside'
       'footer footer footer footer footer footer';
   }
-  .flex-container {
+
+  .menu-bar {
     display: flex;
-    flex-flow: wrap;
   }
 
-  .logo-rain{
-      width: 200px;
-      transform:;
+  .meny-bar2 {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
   }
-  .p{
-      ;
+
+  .menu-item {
+    margin: 1rem;
+    text-decoration: none;
+    color:white;
+  background-color:unset
   }
+
+
+
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.logo-rain {
+  width: 200px;
+  height: 75px;
+  top: 50px;
+}
+.nature-img{
+  width: 500px;
+}
+
+
+.mountains-img{
+  width: 500px;
+}
+
+.bottom-footer {
+  background-color:whitesmoke;
+  
+  height: 1px;
+}
+
+.p-footer {
+  color:white;
+  background-color: rgb(64, 114, 99);
+  text-align: bottom;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  padding: 75px;
+  font-size: 50px;
+  width: auto
+  ;
+  
+
+}
+
+
+
+
+<!--about-->
+
+box-buttom 
